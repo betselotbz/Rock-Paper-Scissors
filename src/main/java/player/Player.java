@@ -11,5 +11,11 @@ public abstract class Player {
         this.points = points;
         this.play = play;
     }
+    public int getPoints(){
+        return this.points;
+    }
+
+
+
 
 }
