@@ -11,9 +11,17 @@ public abstract class Player {
         this.points = points;
         this.play = play;
     }
-    public int getPoints(){
+    //Setter is a way to change value of a private variable inside a class
+    //Getter allows to access the value of a private varable outside the class
+    public int getPoints() {
         return this.points;
     }
+
+    //setting new value to the as a parameter to the method
+    public void setPoints(int points) {
+        this.points= points;
+    }
+
 
 
 
