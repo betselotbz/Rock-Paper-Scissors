@@ -27,7 +27,13 @@ public abstract class Player {
     public void setPlayerName(String playerName){
         this.playerName = playerName;
     }
-    
+    public boolean getPlay() {
+        return this.play;
+    }
+    public void setPlay(boolean play) {
+        this.play = play;
+    }
+
 
 
 
