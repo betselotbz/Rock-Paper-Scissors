@@ -21,6 +21,9 @@ public abstract class Player {
     public void setPoints(int points) {
         this.points= points;
     }
+    public String getPlayerName() {
+        return this.playerName;
+    }
 
 
 
