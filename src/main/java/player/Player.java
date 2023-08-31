@@ -24,6 +24,10 @@ public abstract class Player {
     public String getPlayerName() {
         return this.playerName;
     }
+    public void setPlayerName(String playerName){
+        this.playerName = playerName;
+    }
+    
 
 
 
