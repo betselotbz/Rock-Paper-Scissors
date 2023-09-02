@@ -7,5 +7,12 @@ public class MainApplication {
         //To store user's choice we declare with a variable type String
             String choice;
 
+            //Showing the option to the user
+        System.out.println("Welcome to Rock-Paper-Scissors Game");
+        System.out.println("1. Play against another player");
+        System.out.println("2. Play against computer");
+        System.out.println("E. End");
+        System.out.println("Plese, enter your choice here: ");
+
     }
 }
