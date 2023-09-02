@@ -47,7 +47,9 @@ public class MainApplication {
     public static String findWinner(String player1Action, String player2Action) { //defined a method takes players action as input
         if (player1Action.equals("Rock") && player2Action.equals("Paper")) {
             return ("Player 2 Wins!");
-        }
+        } else if (player1Action.equals("Paper") && player2Action.equals("Rock")) {
+            return ("Player 1 Wins!");
+      
     }
 
 }
