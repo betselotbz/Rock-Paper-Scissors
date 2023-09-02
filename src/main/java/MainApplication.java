@@ -17,7 +17,17 @@ public class MainApplication {
         //make sure to read user's choice and convert it to lowercase
          choice = scanner.nextLine().toLowerCase();
 
-         if
+         if (choice.equals("1")) {
+             System.out.println("You have chosen to play against another player");
+         } else if (choice.equals("2")) {
+             System.out.println("You have chosen to play against computer");
+         } else if (choice.equals("E")) {
+             System.out.println("End");
+         } else {
+             System.out.println("Invalid. Please enter '1', '2' or 'E'");
+         }
+
+         scanner.close();
 
     }
 }
