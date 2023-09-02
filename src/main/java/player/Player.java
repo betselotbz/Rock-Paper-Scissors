@@ -1,5 +1,14 @@
 package player;
 
+//Interface for User Input
+interface UserInputProvider{
+    //This method will retrieve the player's name.
+    String getPlayerName();
+    //This method will retrieve the player's move in the game ( rock, paper, or scissors).
+    String getPlayerMove();
+}
+
+
 public abstract class Player {
 
     private int points;
@@ -40,6 +49,11 @@ public abstract class Player {
         this.play = play;
     }
 
+    public class ComputerPlayer extends Player {
+        public ComputerPlayer(int points, String playerName, boolean play){
+            super(points, playerName, play);
+        }
+    }
 
 }
 
