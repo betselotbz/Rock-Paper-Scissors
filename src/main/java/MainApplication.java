@@ -21,8 +21,8 @@ public class MainApplication {
 
          if (choice.equals("1")) {
              System.out.println("You have chosen to play against another player");
-             //calling function to display "Player 1. Rock, Paper or Scissors"
-             playAgainstAnotherPlayer();
+
+             playAgainstAnotherPlayer(); //calling method
          } else if (choice.equals("2")) {
              System.out.println("You have chosen to play against computer");
          } else if (choice.equals("E")) {
@@ -39,21 +39,35 @@ public class MainApplication {
         String player1Action = scanner.nextLine().toLowerCase();
 
         System.out.println("Player 2. Rock, Paper or Scissors");
-        String player2 = scanner.nextLine().toLowerCase();
+        String player2Action = scanner.nextLine().toLowerCase();
+
+        String result = findWinner(player1Action, player2Action);
+        System.out.println(result);
 
         scanner.close();
     }
     //Finding Winner
-    public static String findWinner(String player1Action, String player2Action) { //defined a method takes players action as input
-        if (player1Action.equals("Rock") && player2Action.equals("Paper")) {
+    public static String findWinner(String player1Action, String player2Action) {//defined a method takes players action as input
+
+        if (player1Action.equals("rock") && player2Action.equals("paper")) {
             return ("Player 2 Wins!");
-        } else if (player1Action.equals("Paper") && player2Action.equals("Rock")) {
+        } else if (player1Action.equals("paper") && player2Action.equals("rock")) {
             return ("Player 1 Wins!");
-        } else if (player1Action.equals("Scissors") && player2Action.equals("Rock")) {
+        } else if (player1Action.equals("scissors") && player2Action.equals("rock")) {
             return ("Player 2 Wins!");
-        } else if (player1Action.equals("Rock") && player2Action.equals("Scissors")) {
+        } else if (player1Action.equals("rock") && player2Action.equals("scissors")) {
             return ("Player 1 Wins!");
+        } else if (player1Action.equals("paper") && player2Action.equals("scissors")) {
+            return ("Player 2 Wins!");
+        } else if (player1Action.equals("scissors") && player2Action.equals("paper")) {
+            return ("Player 1 Wins");
+        } else {
+            return ("Tie!");
         }
+
     }
+
+
+
 
 }
