@@ -36,12 +36,18 @@ public class MainApplication {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Player 1. Rock, Paper or Scissors");
-        String player1 = scanner.nextLine();
+        String player1Action = scanner.nextLine().toLowerCase();
 
         System.out.println("Player 2. Rock, Paper or Scissors");
-        String player2 = scanner.nextLine();
-        
+        String player2 = scanner.nextLine().toLowerCase();
 
         scanner.close();
     }
+    //Finding Winner
+    public static String findWinner(String player1Action, String player2Action) { //defined a method takes players action as input
+        if (player1Action.equals("Rock") && player2Action.equals("Paper")) {
+            return ("Player 2 Wins!");
+        }
+    }
+
 }
