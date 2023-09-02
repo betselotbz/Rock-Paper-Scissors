@@ -3,10 +3,12 @@ import java.util.Scanner;
 public class MainApplication {
     public static void main(String[] args) {
 
+
         /*Creates an instance of the Scanner class called scanner input from the user through the standard input stream (typically the keyboard*/
         Scanner scanner = new Scanner(System.in);
         //To store user's choice we declare with a variable type String
             String choice;
+
 
             //Showing the option to the user
         System.out.println("Welcome to Rock-Paper-Scissors Game");
@@ -18,6 +20,7 @@ public class MainApplication {
 
         //make sure to read user's choice and convert it to lowercase
          choice = scanner.nextLine().toLowerCase();
+
 
          if (choice.equals("1")) {
              System.out.println("You have chosen to play against another player");
@@ -32,19 +35,10 @@ public class MainApplication {
          }
          scanner.close();
     }
-    public static void playAgainstAnotherPlayer() {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Player 1. Rock, Paper or Scissors");
-        String player1Action = scanner.nextLine().toLowerCase();
-
-        System.out.println("Player 2. Rock, Paper or Scissors");
-        String player2Action = scanner.nextLine().toLowerCase();
-
-        String result = findWinner(player1Action, player2Action);
-        System.out.println(result);
-
-        scanner.close();
+    
+    //checks if user's input is valid
+    private static boolean checkValidInput(String input) {
+        return input.equals("rock") || input.equals("paper") || input.equals("scissors");
     }
     //Finding Winner
     public static String findWinner(String player1Action, String player2Action) {//defined a method takes players action as input
