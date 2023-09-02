@@ -14,5 +14,10 @@ public class MainApplication {
         System.out.println("E. End");
         System.out.println("Plese, enter your choice here: ");
 
+        //make sure to read user's choice and convert it to lowercase
+         choice = scanner.nextLine().toLowerCase();
+
+         if
+
     }
 }
