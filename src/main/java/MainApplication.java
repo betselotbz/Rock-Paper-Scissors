@@ -49,7 +49,11 @@ public class MainApplication {
             return ("Player 2 Wins!");
         } else if (player1Action.equals("Paper") && player2Action.equals("Rock")) {
             return ("Player 1 Wins!");
-      
+        } else if (player1Action.equals("Scissors") && player2Action.equals("Rock")) {
+            return ("Player 2 Wins!");
+        } else if (player1Action.equals("Rock") && player2Action.equals("Scissors")) {
+            return ("Player 1 Wins!");
+        }
     }
 
 }
