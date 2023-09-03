@@ -35,7 +35,28 @@ public class MainApplication {
          }
          scanner.close();
     }
-    
+    public static void playAgainstAnotherPlayer() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Player 1. Rock, Paper or Scissors");
+        String player1Action = scanner.nextLine().toLowerCase();
+
+        System.out.println("Player 2. Rock, Paper or Scissors");
+        String player2Action = scanner.nextLine().toLowerCase();
+
+        String result = findWinner(player1Action, player2Action);
+        System.out.println(result);
+
+        scanner.close();
+    }
+    //Handling Error
+    //Method taking scanner and userInstruction as input
+    private static String getUserInput(Scanner scanner, String userInstruction) {  
+
+    }
+
+
+
     //checks if user's input is valid
     private static boolean checkValidInput(String input) {
         return input.equals("rock") || input.equals("paper") || input.equals("scissors");
