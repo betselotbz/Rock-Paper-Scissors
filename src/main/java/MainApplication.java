@@ -50,9 +50,22 @@ public class MainApplication {
         scanner.close();
     }
     //Handling Error
-    //Method taking scanner and userInstruction as input
-    private static String getUserInput(Scanner scanner, String userInstruction) {  
+    //Method that takes scanner and userInstruction as input
+    private static String getUserInput(Scanner scanner, String userInstruction) {
+        while (true) {
+            try {
+                System.out.println(userInstruction);
+                String input = scanner.nextLine().toLowerCase();
 
+                if (checkValidInput(input)) {
+                    return input;
+                } else {
+                    System.out.println("Invalid input. Please enter rock, paper, or scissors.");
+                }
+            } catch (Exception e) {
+                System.out.println("An error occurred: " + e.getMessage());
+            }
+        }
     }
 
 
