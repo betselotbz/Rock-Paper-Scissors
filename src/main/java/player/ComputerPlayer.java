@@ -2,7 +2,7 @@ package player;
 import java.util.Random;
 
 public class ComputerPlayer {
-    public static void randomPlayer(String[] args) {
+    public static void randomPlayer () {
         Random rand = new Random();
         String [] choices = {"rock", "paper", "scissors"};
         String computerAction = choices[new Random().nextInt(choices.length)];
