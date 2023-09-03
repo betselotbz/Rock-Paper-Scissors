@@ -10,7 +10,7 @@ public class MainApplication {
 
         /*Creates an instance of the Scanner class called scanner input from the user through the standard input stream (typically the keyboard*/
         Scanner scanner = new Scanner(System.in);
-
+        ComputerPlayer computer = new ComputerPlayer();
 
         //To store user's choice we declare with a variable type String
             String choice;
@@ -34,6 +34,7 @@ public class MainApplication {
              playAgainstAnotherPlayer(); //calling method
          } else if (choice.equals("2")) {
              System.out.println("You have chosen to play against computer");
+             ComputerPlayer.randomPlayer();
          } else if (choice.equals("E")) {
              System.out.println("End");
          } else {
