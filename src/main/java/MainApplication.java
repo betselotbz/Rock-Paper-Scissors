@@ -33,9 +33,12 @@ public class MainApplication {
              playAgainstAnotherPlayer(); //calling method
          } else if (choice.equals("2")) {
              System.out.println("You have chosen to play against computer");
-             ComputerPlayer.randomPlayer();
-             System.out.println("Player 1. Rock, Paper or Scissors"); //ask player 1 to choose/finish...
-             String player1Action = scanner.nextLine().toLowerCase();
+
+             //storing random move in computerAction variable
+             String computerAction = ComputerPlayer.randomPlayer();
+             System.out.println(computerAction);
+             System.out.println("Player 1. Rock, Paper or Scissors"); //ask player 1 to choose
+
          } else if (choice.equals("E")) {
              System.out.println("End");
          } else {
