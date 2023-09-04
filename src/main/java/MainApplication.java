@@ -122,8 +122,13 @@ public class MainApplication {
             return ("Player 2 Wins!");
         } else if (player1Action.equals("rock") && computerAction.equals("scissors")) {
             return ("Player 1 Wins!");
-
-
+        } else if (player1Action.equals("paper") && computerAction.equals("scissors")) {
+            return ("Player 2 Wins!");
+        } else if (player1Action.equals("scissors") && computerAction.equals("paper")) {
+            return ("Player 1 Wins");
+        } else {
+            return ("Tie!");
+        }
     }
 
 
