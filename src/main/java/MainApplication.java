@@ -66,6 +66,9 @@ public class MainApplication {
         System.out.println("Player 2. Rock, Paper or Scissors");
         String computerAction = scanner.nextLine().toLowerCase();
 
+        String result = findWinner(player1Action, computerAction);
+        System.out.println(result);
+
         scanner.close();
     }
     //Handling Error
