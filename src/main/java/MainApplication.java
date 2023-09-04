@@ -30,11 +30,12 @@ public class MainApplication {
 
          if (choice.equals("1")) {
              System.out.println("You have chosen to play against another player");
-
              playAgainstAnotherPlayer(); //calling method
          } else if (choice.equals("2")) {
              System.out.println("You have chosen to play against computer");
              ComputerPlayer.randomPlayer();
+             System.out.println("Player 1. Rock, Paper or Scissors"); //ask player 1 to choose/finish...
+             String player1Action = scanner.nextLine().toLowerCase();
          } else if (choice.equals("E")) {
              System.out.println("End");
          } else {
@@ -56,6 +57,9 @@ public class MainApplication {
 
         scanner.close();
     }
+    public static void playAgainstComputer() {
+
+    }
     //Handling Error
     //Method that takes scanner and userInstruction as input
     private static String getUserInput(Scanner scanner, String userInstruction) {
@@ -74,7 +78,6 @@ public class MainApplication {
             }
         }
     }
-
 
 
     //checks if user's input is valid
