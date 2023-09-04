@@ -58,7 +58,15 @@ public class MainApplication {
         scanner.close();
     }
     public static void playAgainstComputer() {
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Player 1. Rock, Paper or Scissors");
+        String player1Action = scanner.nextLine().toLowerCase();
+
+        System.out.println("Player 2. Rock, Paper or Scissors");
+        String computerAction = scanner.nextLine().toLowerCase();
+
+        scanner.close();
     }
     //Handling Error
     //Method that takes scanner and userInstruction as input
