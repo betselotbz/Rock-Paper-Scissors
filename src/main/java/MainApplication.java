@@ -33,12 +33,9 @@ public class MainApplication {
              playAgainstAnotherPlayer(); //calling method
          } else if (choice.equals("2")) {
              System.out.println("You have chosen to play against computer");
-
              //storing random move in computerAction variable
-             String computerAction = ComputerPlayer.randomPlayer();
-             System.out.println(computerAction);
              System.out.println("Player 1. Rock, Paper or Scissors"); //ask player 1 to choose
-
+             String player1Action = scanner.nextLine().toLowerCase();
          } else if (choice.equals("E")) {
              System.out.println("End");
          } else {
@@ -66,10 +63,11 @@ public class MainApplication {
         System.out.println("Player 1. Rock, Paper or Scissors");
         String player1Action = scanner.nextLine().toLowerCase();
 
-        System.out.println("Player 2. Rock, Paper or Scissors");
-        String computerAction = scanner.nextLine().toLowerCase();
+        System.out.println("Computer making move");
+        String computerAction = ComputerPlayer.randomPlayer();
+        System.out.println(computerAction);
 
-        String result = findWinner(player1Action, computerAction);
+        String result = findWinner2(player1Action, computerAction);
         System.out.println(result);
 
         scanner.close();
