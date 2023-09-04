@@ -11,6 +11,7 @@ public class MainApplication {
         /*Creates an instance of the Scanner class called scanner input from the user through the standard input stream (typically the keyboard*/
         Scanner scanner = new Scanner(System.in);
         ComputerPlayer computer = new ComputerPlayer();
+        boolean continuePlaying = true;
 
         //To store user's choice we declare with a variable type String
             String choice;
@@ -27,20 +28,25 @@ public class MainApplication {
         //make sure to read user's choice and convert it to lowercase
          choice = scanner.nextLine().toLowerCase();
 
-
-         if (choice.equals("1")) {
-             System.out.println("You have chosen to play against another player");
-             playAgainstAnotherPlayer(); //calling method
-         } else if (choice.equals("2")) {
-             System.out.println("You have chosen to play against computer");
-             //storing random move in computerAction variable
-             System.out.println("Player 1. Rock, Paper or Scissors"); //ask player 1 to choose
-             String player1Action = scanner.nextLine().toLowerCase();
-         } else if (choice.equals("E")) {
-             System.out.println("End");
-         } else {
-             System.out.println("Invalid. Please enter '1', '2' or 'E'");
-         }
+        while(continuePlaying) {
+            if (choice.equals("1")) {
+                System.out.println("You have chosen to play against another player");
+                playAgainstAnotherPlayer(); //calling method
+            } else if (choice.equals("2")) {
+                System.out.println("You have chosen to play against computer");
+                //storing random move in computerAction variable
+                String computerAction = ComputerPlayer.randomPlayer();
+                System.out.println(computerAction);
+                System.out.println("Player 1. Rock, Paper or Scissors"); //ask player 1 to choose
+                String player1Action = scanner.nextLine().toLowerCase();
+                String result = findWinner2(player1Action, computerAction);
+                System.out.println(result);
+            } else if (choice.equals("E")) {
+                System.out.println("End");
+            } else {
+                System.out.println("Invalid. Please enter '1', '2' or 'E'");
+            }
+        }
          scanner.close();
     }
     public static void playAgainstAnotherPlayer() {
