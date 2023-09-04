@@ -112,7 +112,16 @@ public class MainApplication {
         }
 
     }
-    public static String findWinner2 (String player1Action, String player2Action) {//defined a method takes players action as input
+    public static String findWinner2 (String player1Action, String computerAction) {//defined a method takes players action as input
+
+        if (player1Action.equals("rock") && computerAction.equals("paper")) {
+            return ("Player 2 Wins!");
+        } else if (player1Action.equals("paper") && computerAction.equals("rock")) {
+            return ("Player 1 Wins!");
+        } else if (player1Action.equals("scissors") && computerAction.equals("rock")) {
+            return ("Player 2 Wins!");
+        } else if (player1Action.equals("rock") && computerAction.equals("scissors")) {
+            return ("Player 1 Wins!");
 
 
     }
