@@ -37,8 +37,8 @@ public class MainApplication {
                 //storing random move in computerAction variable
                 String computerAction = ComputerPlayer.randomPlayer();
                 System.out.println(computerAction);
-                System.out.println("Player 1. Rock, Paper or Scissors"); //ask player 1 to choose
                 String player1Action = scanner.nextLine().toLowerCase();
+                System.out.println("Player 1. Rock, Paper or Scissors"); //ask player 1 to choose
                 String result = findWinner2(player1Action, computerAction);
                 System.out.println(result);
             } else if (choice.equals("E")) {
