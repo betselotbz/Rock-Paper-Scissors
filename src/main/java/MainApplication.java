@@ -112,6 +112,10 @@ public class MainApplication {
         }
 
     }
+    public static String findWinner2 (String player1Action, String player2Action) {//defined a method takes players action as input
+
+
+    }
 
 
 
