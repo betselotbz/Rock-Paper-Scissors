@@ -7,6 +7,7 @@
     <list default="true" id="16a87353-04f7-4f95-8120-81475651a86e" name="Changes" comment="added class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/player/GameLogic.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +20,7 @@
         <option value="package-info" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="module-info" />
       </list>
     </option>
   </component>
@@ -74,6 +76,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainApplication" />
+      <module name="RockPaperScissors" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainApplication" />
       <module name="RockPaperScissors" />
@@ -84,6 +93,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainApplication" />
+        <item itemvalue="Application.MainApplication (1)" />
         <item itemvalue="Application.GameResult (1)" />
         <item itemvalue="Application.GameResult" />
       </list>
@@ -100,7 +110,7 @@
       <workItem from="1693504097866" duration="12370000" />
       <workItem from="1693625935035" duration="12827000" />
       <workItem from="1693687256304" duration="21980000" />
-      <workItem from="1693839754867" duration="25968000" />
+      <workItem from="1693839754867" duration="27402000" />
     </task>
     <servers />
   </component>
