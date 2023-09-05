@@ -45,6 +45,7 @@ public class MainApplication {
                 System.out.println("End");
             } else {
                 System.out.println("Invalid. Please enter '1', '2' or 'E'");
+                scanner.nextLine(); //prevents top line of code from iterating 
             }
         }
          scanner.close();
