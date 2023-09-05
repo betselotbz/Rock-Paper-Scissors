@@ -82,8 +82,11 @@ public class MainApplication {
 
         scanner.close();
     }
-    //Handling Error
-    //Method that takes scanner and userInstruction as input
+
+    /*Method that takes scanner and userInstruction as input with error handling
+    Params1: scanner - scanner will read user input
+    Params2: userInstruction - Instruction to be shown to user
+     */
     private static String getUserInput(Scanner scanner, String userInstruction) {
         while (true) {
             try {
