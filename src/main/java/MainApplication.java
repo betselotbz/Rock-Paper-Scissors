@@ -18,18 +18,18 @@ public class MainApplication {
             String choice;
 
 
-            //Showing the option to the user/Main Menu
-        System.out.println("Welcome to Rock-Paper-Scissors Game");
-        System.out.println("1. Play against another player");
-        System.out.println("2. Play against computer");
-        System.out.println("Q. Quit");
-        System.out.println("Please, enter your choice here: ");
-
-
-        //make sure to read user's choice and convert it to lowercase
-         choice = scanner.nextLine().toLowerCase();
 
         while(continuePlaying) {
+            //Showing the option to the user/Main Menu
+            System.out.println("Welcome to Rock-Paper-Scissors Game");
+            System.out.println("1. Play against another player");
+            System.out.println("2. Play against computer");
+            System.out.println("Q. Quit");
+            System.out.println("Please, enter your choice here: ");
+
+            //make sure to read user's choice and convert it to lowercase
+            choice = scanner.nextLine().toLowerCase();
+
             if (choice.equals("1")) {
                 System.out.println("You have chosen to play against another player");
                 playAgainstAnotherPlayer(scanner); //calling method
@@ -42,7 +42,7 @@ public class MainApplication {
                 System.out.println("Player 1. Rock, Paper or Scissors"); //ask player 1 to choose
                 String result = findWinner2(player1Action, computerAction);
                 System.out.println(result);
-            } else if (choice.equals("Q")) {
+            } else if (choice.equals("q")) {
                 System.out.println("Quit");
             } else {
                 System.out.println("Invalid. Please enter '1', '2' or 'Q'");
