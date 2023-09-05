@@ -21,7 +21,7 @@ public class MainApplication {
         System.out.println("Welcome to Rock-Paper-Scissors Game");
         System.out.println("1. Play against another player");
         System.out.println("2. Play against computer");
-        System.out.println("E. End");
+        System.out.println("Q. Quit");
         System.out.println("Please, enter your choice here: ");
 
 
@@ -41,11 +41,11 @@ public class MainApplication {
                 System.out.println("Player 1. Rock, Paper or Scissors"); //ask player 1 to choose
                 String result = findWinner2(player1Action, computerAction);
                 System.out.println(result);
-            } else if (choice.equals("E")) {
-                System.out.println("End");
+            } else if (choice.equals("Q")) {
+                System.out.println("Quit");
             } else {
-                System.out.println("Invalid. Please enter '1', '2' or 'E'");
-                scanner.nextLine(); //prevents top line of code from iterating 
+                System.out.println("Invalid. Please enter '1', '2' or 'Q'");
+                scanner.nextLine(); //prevents top line of code from iterating
             }
         }
          scanner.close();

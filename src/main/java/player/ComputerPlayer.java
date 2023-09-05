@@ -1,5 +1,6 @@
 package player;
 import java.util.Random;
+import java.util.Scanner;
 
 public class ComputerPlayer {
     /*Generate a random move for computer
