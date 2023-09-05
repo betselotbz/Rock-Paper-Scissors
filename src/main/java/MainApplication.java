@@ -110,7 +110,7 @@ public class MainApplication {
     private static boolean checkValidInput(String input) {
         return input.equals("rock") || input.equals("paper") || input.equals("scissors");
     }
-    /*Method to find the Winner
+    /*Method to find the Winner between Player1 vs Player 2
      Params1: player1Action - Player 1 action to input either rock, paper, or scissors
      Params2: player2Action - Player 2 action to input either rock, paper, or scissors */
     public static String findWinner(String player1Action, String player2Action) {//defined a method takes players action as input
@@ -132,6 +132,9 @@ public class MainApplication {
         }
 
     }
+    /*Method to find the Winner between Player1 vs Computer
+    Params1: player1Action - Player 1 action to input either rock, paper, or scissors
+    Params2: computerAction - Computer action to input either rock, paper, or scissors */
     public static String findWinner2 (String player1Action, String computerAction) {//defined a method takes players action as input
 
         if (player1Action.equals("rock") && computerAction.equals("paper")) {
@@ -150,8 +153,4 @@ public class MainApplication {
             return ("Tie!");
         }
     }
-
-
-
-
 }
