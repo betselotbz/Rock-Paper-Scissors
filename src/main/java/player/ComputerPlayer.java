@@ -2,6 +2,8 @@ package player;
 import java.util.Random;
 
 public class ComputerPlayer {
+    /*Generate a random move for computer
+     @return a random move either rock, paper, or scissors for computer*/
     public static String randomPlayer () {
         Random rand = new Random();
         String [] choices = {"rock", "paper", "scissors"};
