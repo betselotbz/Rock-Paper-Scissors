@@ -49,6 +49,8 @@ public class MainApplication {
         }
          scanner.close();
     }
+    //Method to play against another player
+    //Params1: scanner - scanner will read user input
     public static void playAgainstAnotherPlayer() {
         Scanner scanner = new Scanner(System.in);
 
@@ -125,15 +127,15 @@ public class MainApplication {
     public static String findWinner2 (String player1Action, String computerAction) {//defined a method takes players action as input
 
         if (player1Action.equals("rock") && computerAction.equals("paper")) {
-            return ("Player 2 Wins!");
+            return ("Computer Wins!");
         } else if (player1Action.equals("paper") && computerAction.equals("rock")) {
             return ("Player 1 Wins!");
         } else if (player1Action.equals("scissors") && computerAction.equals("rock")) {
-            return ("Player 2 Wins!");
+            return ("Computer Wins!");
         } else if (player1Action.equals("rock") && computerAction.equals("scissors")) {
             return ("Player 1 Wins!");
         } else if (player1Action.equals("paper") && computerAction.equals("scissors")) {
-            return ("Player 2 Wins!");
+            return ("Computer Wins!");
         } else if (player1Action.equals("scissors") && computerAction.equals("paper")) {
             return ("Player 1 Wins");
         } else {
