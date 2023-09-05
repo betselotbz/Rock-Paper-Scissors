@@ -49,8 +49,8 @@ public class MainApplication {
         }
          scanner.close();
     }
-    //Method to play against another player
-    //Params1: scanner - scanner will read user input
+    /*Method to play against another player
+    Params1: scanner - scanner will read user input*/
     public static void playAgainstAnotherPlayer() {
         Scanner scanner = new Scanner(System.in);
 
@@ -65,6 +65,8 @@ public class MainApplication {
 
         scanner.close();
     }
+    /*Method to play against computer
+    Params1: scanner - scanner will read user input*/
     public static void playAgainstComputer() {
         Scanner scanner = new Scanner(System.in);
 
