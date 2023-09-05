@@ -105,7 +105,8 @@ public class MainApplication {
     }
 
 
-    //checks if user's input is valid
+    /*checks if user's input is valid
+    Params1: input - checking user input*/
     private static boolean checkValidInput(String input) {
         return input.equals("rock") || input.equals("paper") || input.equals("scissors");
     }
