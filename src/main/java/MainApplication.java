@@ -110,7 +110,9 @@ public class MainApplication {
     private static boolean checkValidInput(String input) {
         return input.equals("rock") || input.equals("paper") || input.equals("scissors");
     }
-    //Finding Winner
+    /*Method to find the Winner
+     Params1: player1Action - Player 1 action to input either rock, paper, or scissors
+     Params2: player2Action - Player 2 action to input either rock, paper, or scissors */
     public static String findWinner(String player1Action, String player2Action) {//defined a method takes players action as input
 
         if (player1Action.equals("rock") && player2Action.equals("paper")) {
